@@ -1,0 +1,110 @@
+{
+  "movies": [
+    {
+      "title": "Peaky Blinders",
+      "imgSrc": "./1.jpeg",
+      "details": {
+        "description": "A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
+        "link": "https://example.com/watch/peaky-blinders"
+      }
+    },
+    {
+      "title": "Money Heist",
+      "imgSrc": "./2.jpeg",
+      "details": {
+        "description": "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal manipulates the police to carry out his plan.",
+        "link": "https://example.com/watch/money-heist"
+      }
+    },
+    {
+      "title": "TENET",
+      "imgSrc": "./333.jpg",
+      "details": {
+        "description": "A secret agent is given a single word as his weapon and sent to prevent the onset of World War III.",
+        "link": "https://example.com/watch/tenet"
+      }
+    },
+    {
+      "title": "Knives Out",
+      "imgSrc": "./444.jpg",
+      "details": {
+        "description": "The circumstances surrounding the death of crime novelist Harlan Thrombey are mysterious.",
+        "link": "https://example.com/watch/knives-out"
+      }
+    },
+    {
+      "title": "Avengers",
+      "imgSrc": "./5.jpg",
+      "details": {
+        "description": "American superhero film based on the Marvel Comics superhero team of the same name.",
+        "link": "https://example.com/watch/avengers"
+      }
+    },
+    {
+      "title": "Rampage",
+      "imgSrc": "./6.jpg",
+      "details": {
+        "description": "Rampage is a 2018 American science fiction monster film directed by Brad Peyton, loosely based on the video game series of the same name by Midway Games.",
+        "link": "https://example.com/watch/rampage"
+      }
+    },
+    {
+      "title": "Ender's Game",
+      "imgSrc": "./7.jpg",
+      "details": {
+        "description": "Ender's Game is a 2013 American military science fiction action film based on Orson Scott Card's 1985 novel of the same name.",
+        "link": "https://example.com/watch/enders-game"
+      }
+    }
+  ],
+  "favorites": [
+    {
+      "title": "The Kargil Girl",
+      "imgSrc": "./20.jpg",
+      "details": {
+        "description": "A story of a brave Indian Air Force pilot.",
+        "link": "https://example.com/watch/the-kargil-girl"
+      }
+    },
+    {
+      "title": "Inception",
+      "imgSrc": "./21.jpg",
+      "details": {
+        "description": "A thief who steals corporate secrets through dream-sharing technology is tasked with planting an idea.",
+        "link": "https://example.com/watch/inception"
+      }
+    },
+    {
+      "title": "Thor",
+      "imgSrc": "./24.jpg",
+      "details": {
+        "description": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans.",
+        "link": "https://example.com/watch/thor"
+      }
+    },
+    {
+      "title": "Raya and the Last Dragon",
+      "imgSrc": "./22.jpg",
+      "details": {
+        "description": "A lone warrior sets out to find the last dragon to save her kingdom.",
+        "link": "https://example.com/watch/raya-the-last-dragon"
+      }
+    },
+    {
+      "title": "Avengers",
+      "imgSrc": "./23.jpg",
+      "details": {
+        "description": "Earth's mightiest heroes must come together to stop a global threat.",
+        "link": "https://example.com/watch/avengers"
+      }
+    },
+    {
+      "title": "Lego Batman",
+      "imgSrc": "./25.jpg",
+      "details": {
+        "description": "Lego Batman sets out to save Gotham City from the Joker's hostile takeover.",
+        "link": "https://example.com/watch/lego-batman"
+      }
+    }
+  ]
+}

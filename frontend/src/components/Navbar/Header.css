@@ -1,0 +1,41 @@
+/* Header.css */
+.navbar {
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .menu-list-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .menu-list-item a:hover {
+    color: #f39c12;
+  }
+  
