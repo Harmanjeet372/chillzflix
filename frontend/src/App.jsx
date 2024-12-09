@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar/Navbar';
@@ -6,7 +6,7 @@ import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Home from './components/Home/Home';
 import Movies from './components/MovieList/MovieList';
-import ProtectedRoute from './components/ProtectedRotes'
+import ProtectedRoute from './components/ProtectedRotes'; // Import ProtectedRoute component
 import Profile from './components/Profile/Profile';
 
 // import './App.css';
@@ -34,7 +34,6 @@ const App = () => {
     }
   };
 
-
   return (
     <AuthProvider>
       <Router>
@@ -43,46 +42,32 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
 
+          {/* Protected Route for Home */}
           <Route
             path="/"
-            element={<Home refs={homeRef} moviesRef={moviesRef} favoritesRef={favoritesRef} watchLaterRef={watchLaterRef} />}
+            element={
+              <ProtectedRoute>
+                <Home refs={homeRef} moviesRef={moviesRef} favoritesRef={favoritesRef} watchLaterRef={watchLaterRef} />
+              </ProtectedRoute>
+            }
           />
 
+          {/* Protected Route for Profile */}
           <Route
             path="/profile"
-            element={<Profile />} />
+            element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route
-            path='/movies'
-            element={<Movies />}
-          ></Route>
+          {/* Movies Route */}
+          <Route path='/movies' element={<Movies />} />
         </Routes>
-
-
-
       </Router>
     </AuthProvider>
   );
 };
-
-
-
-
-
-// const AppAlternate = () => {
-//   // Example dataset to search from
-//   const data = ['Apple', 'Banana', 'Cherry', 'Date', 'Grapes', 'Orange'];
-
-//   return (
-//     <div>
-//       <h1>Search Bar Example</h1>
-//       <SearchBar data={data} />
-//     </div>
-//   );
-// };
-
-
-
-
 
 export default App;
