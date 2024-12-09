@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 
-const Navbar = ({ scrollToSection, isAuthenticated }) => {
+const Navbar = ({ scrollToSection }) => {
   const { token } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -13,7 +13,7 @@ const Navbar = ({ scrollToSection, isAuthenticated }) => {
         {/* Logo */}
         <Link
           className="text-white text-2xl font-bold cursor-pointer"
-          to="/home"
+          to="/"
         >
           ChillFlixz
         </Link>
@@ -35,17 +35,12 @@ const Navbar = ({ scrollToSection, isAuthenticated }) => {
         <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:flex space-x-8`}>
           {/* Section Navigation */}
           <Link
-            to="/home"
+            to="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-white hover:text-blue-500 transition duration-300 text-lg font-medium"
           >
             Home
           </Link>
-          <button
-            onClick={() => scrollToSection && scrollToSection('movies')}
-            className="text-white hover:text-blue-500 transition duration-300 text-lg font-medium"
-          >
-            Movies
-          </button>
           <button
             onClick={() => scrollToSection && scrollToSection('favorites')}
             className="text-white hover:text-blue-500 transition duration-300 text-lg font-medium"

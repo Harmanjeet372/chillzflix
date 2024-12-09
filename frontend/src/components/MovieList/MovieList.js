@@ -66,6 +66,7 @@ const MovieList = () => {
         <i className="fas fa-chevron-right arrow"></i>
       </div>
     </div>
+    
   );
 };
 

@@ -5,8 +5,10 @@ import Navbar from './components/Navbar/Navbar';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Home from './components/Home/Home';
+import Movies from './components/MovieList/MovieList';
 import ProtectedRoute from './components/ProtectedRotes'
 import Profile from './components/Profile/Profile';
+
 // import './App.css';
 
 const App = () => {
@@ -42,17 +44,45 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
 
           <Route
-            path="/home"
+            path="/"
             element={<Home refs={homeRef} moviesRef={moviesRef} favoritesRef={favoritesRef} watchLaterRef={watchLaterRef} />}
           />
 
           <Route
             path="/profile"
             element={<Profile />} />
+
+          <Route
+            path='/movies'
+            element={<Movies />}
+          ></Route>
         </Routes>
+
+
+
       </Router>
     </AuthProvider>
   );
 };
+
+
+
+
+
+// const AppAlternate = () => {
+//   // Example dataset to search from
+//   const data = ['Apple', 'Banana', 'Cherry', 'Date', 'Grapes', 'Orange'];
+
+//   return (
+//     <div>
+//       <h1>Search Bar Example</h1>
+//       <SearchBar data={data} />
+//     </div>
+//   );
+// };
+
+
+
+
 
 export default App;

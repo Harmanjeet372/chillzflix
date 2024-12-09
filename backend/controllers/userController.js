@@ -29,10 +29,12 @@ const sendEmail = async (to, subject, text) => {
 const createUser = async (req, res) => {
     const { name, email, password } = req.body;
 
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() });
-    }
+    console.log(name, email, password);
+
+    // const errors = validationResult(req);
+    // if (!errors.isEmpty()) {
+    //     return res.status(400).json({ errors: errors.array() });
+    // }
 
     try {
         let user = await userModel.findOne({ email });

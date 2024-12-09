@@ -24,13 +24,13 @@ router.get('/hello', (req, res) => {
 });
 
 // Route to create a new user (signup) - no authentication required
-router.post('/users/signup', userValidationRules(), createUser);
+router.post('/users/signup', createUser);
 
 // Route to login user - no authentication required
-router.post('/users/login', loginValidationRules(), loginUser);
+router.post('/users/login', loginUser);
 
 // Route to request a password reset link - no authentication required
-router.post('/users/forgot-password', forgotPasswordValidationRules(), forgotPassword);
+router.post('/users/forgot-password', forgotPassword);
 
 // Route to verify email after signup
 router.post('/users/verify-email', createVerificationToken);
